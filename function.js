@@ -35,7 +35,7 @@ function whoWon(){
     if(player1==player2){
         document.getElementById('results').innerHTML='Empate'
     }else if(games.get(player1)==player2){
-    document.getElementById('results').innerHTML='Gana Jugador 1'
+    document.getElementById('results').innerHTML='GANASTE!!'
     }else{
         document.getElementById('results').innerHTML='Gana Jugador 2'
     }
