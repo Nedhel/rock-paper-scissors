@@ -1,6 +1,8 @@
 let game
 function play (){
     document.getElementById('play').disabled = true
+    document.getElementById('results').innerHTML=''
+    document.getElementById('results').style.fontSize='10px'
     game = setInterval(()=>{
         let img=document.getElementById('img-player2').alt
         switch(img){
@@ -26,7 +28,7 @@ function play (){
 function stop(){
     clearInterval(game)
     document.getElementById('play').disabled = false
-    whoWon()
+    whoWon()    
 }
 function whoWon(){
     const games = new Map([["3", "2"],["2", '1'],["1", '3']]);
@@ -39,6 +41,7 @@ function whoWon(){
     }else{
         document.getElementById('results').innerHTML='Gana Jugador 2'
     }
+    document.getElementById('results').style.fontSize='100px'
 }
 function handPlayer(id){
     switch(id){
