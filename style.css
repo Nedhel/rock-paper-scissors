@@ -60,3 +60,6 @@ h1{
     transition-timing-function: linear;
     transition-delay: 0s;    
 }
+label{
+    font-size: 30px;
+}
